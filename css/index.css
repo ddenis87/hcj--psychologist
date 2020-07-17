@@ -6,7 +6,7 @@
 
 .basicGrid {
   display: grid;
-  grid-template-areas: "navigation navigation navigation navigation"
+  grid-template-areas: "menu menu menu menu"
                        "header header header header"  
                        "body body body body" 
                        "footer footer footer footer";
@@ -19,18 +19,29 @@
   border: 0px solid grey;
 }
 
+.menu {
+  grid-area: menu;
+  position: fixed;
+  width: 100%;
+  background-color: teal;
+  z-index: 999;
+}
+
 .navigation {
   grid-area: navigation;
   display: flex;
-  padding-left: 10%;
-  padding-right: 10%;
-  justify-content: right;
+  flex-direction: row;
+  height: 60px;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
   align-items: center;
-  border: 0px solid grey;
+  border: 0px solid black;
 }
 .navigation__li {
   display: inline;
   margin-left: 10px;
+  color: whitesmoke;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.9em;

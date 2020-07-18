@@ -7,18 +7,18 @@
   <link rel="stylesheet" href="css/index.css">
   <title>Document</title>
 </head>
+<div class="menu">
+  <div class="navigation">
+    <div></div>
+    <ul class="navigation__ul-inline">
+      <a href="#kabinet"><li class="navigation__li-inline">О кабинете</li></a>
+      <a href="#yslugi"><li class="navigation__li-inline">Услуги</li></a>
+      <a href="#zapis"><li class="navigation__li-inline">Записаться</li></a>
+    </ul>
+  </div>
+</div>
 <body class="generalBlock">
   <div class="basicGrid">
-    <div class="menu">
-      <div class="navigation">
-        <div></div>
-        <ul class="navigation__ul">
-          <a href="#kabinet"><li class="navigation__li">О кабинете</li></a>
-          <li class="navigation__li">Услуги</li>
-          <li class="navigation__li">Записаться</li>
-        </ul>
-      </div>
-    </div>
     <div class="header">
       <div class="registration">
         <h3 class="registration__title">Записаться на консультацию</h3>
@@ -65,16 +65,20 @@
         </div>
         <button class="registration__button">Далее</button>
       </div>
+      <div class="header__title">
+        <h1 class="header__h1">Кабинет психолога</h1>
+        <h3 class="header__h3">Профессиональная помощь в решении ваших проблем</h3>
+      </div>
     </div>
+    
     <div class="body">
-
       <h2 class="body__h2" id="kabinet">Как проходит работа?</h2>
       <p class="body_p">Моя работа состоит в том, чтобы помочь Вам разобраться в том, что с Вами происходит, научиться слышать и понимать себя, найти ресурсы для преодоления трудностей.</p>
       <p class="body_p">Я уделяю большое вниманию Вашему состоянию в настоящее время, не склонна много времени уделять обсуждению прошлого (если это не составляет причину обращения).</p>
       <p class="body_p">Моя работа основана на научных методах, доказавших свою эффекивность.
         Оказываю поддержку и отвечаю на возникающие вопросы. Совместно мы сможем найти пути выхода из сложившейся ситуации. Как показывает опыт клиентов, уже после первой встречи улучшается эмоциональное состояние и появляется целостное видение ситуации и возможностей ее решения.</p>
       <hr>
-      <h2 class="body__h2">С какими вопросами ко мне обращаются клиенты?</h2>
+      <h2 class="body__h2" id="yslugi">С какими вопросами ко мне обращаются клиенты?</h2>
       <div class="bodyGrid">
         <div class="bodyGrid__sideLeft">
           <h3 class="bodyGrid__h3">Эмоциональные состояния</h3>
@@ -117,7 +121,7 @@
         </div>
       </div>
       <hr>
-      <h2 class="body__h2">Записаться</h2>
+      <h2 class="body__h2" id="zapis">Записаться</h2>
       <div class="bodyGrid">
         <div class="bodyGrid__sideLeft">
           <p class="bodyGrid__p">Вы можете связаться со мной через форму обратной связи и я свяжусь с вами для уточнения даты и времени встречи.</p>
@@ -144,8 +148,15 @@
       </div>
     </div>
     <div class="footer">
-      FOOTER
+      <ul class="navigation__ul-block">
+        <a href="#kabinet"><li class="navigation__li-block" id="liKabinet">О кабинете</li></a>
+          <a href="#yslugi"><li class="navigation__li-block">Услуги</li></a>
+          <a href="#zapis"><li class="navigation__li-block">Записаться</li></a>
+      </ul>
     </div>
-  </div>  
+    <div class="copyright">
+      Copyright by Denis Dontsov, 2020
+    </div>
+  </div>
 </body>
 </html>
